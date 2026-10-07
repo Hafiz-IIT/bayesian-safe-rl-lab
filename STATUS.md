@@ -1,0 +1,1 @@
+Implemented scalar uncertainty-interval action gate with deterministic tests and CI. It is a research abstraction, not a safety certificate.

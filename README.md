@@ -3,6 +3,8 @@
 > **Research prototype:** uncertainty-aware action gating using a simple Bayesian-style dynamics uncertainty model.
 
 ## Research question
+
+<p align="center"><a href="https://github.com/Hafiz-IIT/bayesian-safe-rl-lab/actions"><img src="https://img.shields.io/github/actions/workflow/status/Hafiz-IIT/bayesian-safe-rl-lab/ci.yml?label=CI" alt="CI"/></a></p>
 How should uncertainty in the transition model affect an action-authorization decision?
 
 ## Implemented

@@ -1,4 +1,8 @@
-from uncertainty_gate import DynamicsEstimate, authorize
+"""Show posterior uncertainty shrinking as scalar observations arrive."""
+from uncertainty_gate import GaussianPosterior, authorize
 
-for estimate in [DynamicsEstimate(0.5,0.1), DynamicsEstimate(0.8,0.2), DynamicsEstimate(1.2,0.1)]:
-    print(estimate, "->", authorize(estimate, 0.9))
+posterior = GaussianPosterior(mean=0.0, variance=1.0)
+for observation in (0.72, 0.81, 0.77):
+    posterior = posterior.update(observation, observation_variance=0.04)
+    interval = posterior.credible_interval(z_score=1.96)
+    print(f"posterior={posterior}; interval={interval}; gate={authorize(interval, 0.9)}")

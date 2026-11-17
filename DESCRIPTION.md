@@ -1,1 +1,1 @@
-Uncertainty-aware action-authorization prototype for studying conservative decisions under uncertain dynamics.
+Scalar Normal--Normal posterior and interval-based action-authorization prototype. It does not implement policy learning or provide a formal safety guarantee.
